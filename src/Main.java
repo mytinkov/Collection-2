@@ -1,3 +1,5 @@
+import HW.Multiply.MultiplicationTable;
+import HW.Multiply.Task;
 import HW.Product.Product;
 import HW.Product.ProductAlreadyExistsException;
 import HW.Product.ProductList;
@@ -28,16 +30,18 @@ public class Main {
         System.out.println(productList);
 
         numbersSetRemoveEven();
-//        MultiplicationTable multiplicationTable = new MultiplicationTable();
-//        System.out.println(multiplicationTable);
-//        Task task = new Task(3, 4);
-//        Task task2 = new Task(3, 4);
-//        Set<Task> set = new HashSet<>();
-//        set.add(task);
-//        set.add(task2);
-//        System.out.println(set);
+        MultiplicationTable multiplicationTable = new MultiplicationTable();
+        System.out.println(multiplicationTable);
+        Task task = new Task(3, 4);
+        Task task2 = new Task(3, 4);
+        Set<Task> set = new HashSet<>();
+        set.add(task);
+        set.add(task2);
+        System.out.println(set);
 
         Mechanic<Car> mrMax = new Mechanic<>("Максим","Тиньков", "Газром");
+        Car ladaVesta = new Car("Лада", "Веста", 1.8f, BodyType.COUPE);
+
 
     }
 
@@ -59,4 +63,5 @@ public class Main {
 
 
     }
+
 }
