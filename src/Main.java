@@ -2,6 +2,14 @@ import HW.Product.Product;
 import HW.Product.ProductAlreadyExistsException;
 import HW.Product.ProductList;
 
+import HW.Race.ExceptionPassword.Data;
+import HW.Race.transport.*;
+import HW.Race.driver.Driver;
+import HW.Race.driver.DriverB;
+import HW.Race.driver.DriverC;
+import HW.Race.driver.DriverD;
+import HW.Race.ExceptionPassword.Data;
+
 import java.util.*;
 
 public class Main {
@@ -28,6 +36,9 @@ public class Main {
 //        set.add(task);
 //        set.add(task2);
 //        System.out.println(set);
+
+        Mechanic<Car> mrMax = new Mechanic<>("Максим","Тиньков", "Газром");
+
     }
 
     private static void numbersSetRemoveEven() {
@@ -45,5 +56,7 @@ public class Main {
             }
         }
         System.out.println(numbers);
+
+
     }
 }
